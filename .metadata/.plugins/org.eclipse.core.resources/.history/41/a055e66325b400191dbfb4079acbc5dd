@@ -1,0 +1,22 @@
+import java.io.Console;
+
+public class InputString{
+
+	public static void main(String args[]){
+			Console console = System.console();
+			
+			
+		System.out.println("please input first String:");
+		String str1 = null;
+		str1 = console.readLine();
+		System.out.println("please input second String:");
+		String str2 = null;
+		str2 = console.readLine();
+		
+		System.out.println("Input String:");
+		System.out.println(str1);
+		System.out.println(str2);
+		
+	}
+	
+}

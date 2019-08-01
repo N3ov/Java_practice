@@ -1,0 +1,19 @@
+import java.io.Console;
+
+public class AddTwoInt {
+
+	public static void main(String[] args) {
+		Console console = System.console();
+		String str1, str2;
+		
+		System.out.println("please input first Number:");
+		str1 = console.readLine();
+		System.out.println("please input second Number:");
+		str2 = console.readLine();
+		
+		System.out.println("Connect Two String:");
+		System.out.println(Integer.parseInt(str1) + Integer.parseInt(str2));
+		
+	}	
+	
+}

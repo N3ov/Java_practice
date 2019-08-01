@@ -1,0 +1,17 @@
+import java.io.Console;
+import java.io.IOException;
+
+public class Circle {
+
+	public static void main(String argv[]){
+		System.out.print("Please input radius:");
+		Console console = System.console();
+		String str = console.readLine();
+		
+		System.out.print("Area: ");
+		System.out.println(Math.PI * Math.pow(Double.parseDouble(str),2));
+		System.out.print("Circumference: ");
+		System.out.println(2 * Math.PI * Double.parseDouble(str));
+	}
+	
+}

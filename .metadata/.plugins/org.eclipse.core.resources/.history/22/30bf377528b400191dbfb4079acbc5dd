@@ -1,0 +1,14 @@
+import java.io.*;
+
+public class HelloWorld {
+	
+	public static void main(String argv[]) {
+		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("What is your name:");
+		String name = null;
+		name = console.readLine();
+		System.out.println("Hello" + name);
+	}
+	
+	
+}
