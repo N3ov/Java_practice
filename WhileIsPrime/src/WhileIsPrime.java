@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class WhileIsPrime {
 
     public static void main(String args[])throws IOException {
-
+        System.out.println("Insert a integer number");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(in.readLine());
 
@@ -14,17 +14,19 @@ public class WhileIsPrime {
 
         }else{
 
-        for (int i = 2; i <= (num / 2); i--) {
+            for (int i = 2; i <= (num / 2); i++) {
 
-            if (num % i == 0){
+                if (num % i == 0){
 
-                System.out.print(num + " is not a prime number");
-                break;
-            } else{
+                    System.out.print(num + " is not a prime number");
+                    break;
+                } else{
 
                 System.out.print(num + " is a prime number");
+                break;
                 }
             }
         }
+        return;
     }
 }
