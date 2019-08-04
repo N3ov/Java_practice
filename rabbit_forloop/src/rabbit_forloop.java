@@ -20,7 +20,8 @@ public class rabbit_forloop {
             for (int i = 2; i < months; i++) {
                 arr[i] = arr[i - 1] + arr[i - 2];
                 if (i == (months - 1)) System.out.println(arr[i] + " pairs of rabbits");
-            }    }
+            }
+        }
     }
 
 }

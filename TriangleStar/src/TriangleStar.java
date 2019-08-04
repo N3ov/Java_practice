@@ -15,11 +15,11 @@ public class TriangleStar {
         System.out.print(emptyTimes.repeat(1))
         */
 
-        for (int i = 0; i <= layers; i++) {
+        for (int i = 0; i < layers; i++) {
             for (int j = 0; j <= i; j++){
                 System.out.print(" ");
             }
-            for (int k = 1; k <= layers - i +1; k++){
+            for (int k = layers; k > i; k--){
                 System.out.print("*");
             }
             System.out.println();
