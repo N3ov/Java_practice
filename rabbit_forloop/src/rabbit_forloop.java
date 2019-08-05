@@ -9,19 +9,22 @@ public class rabbit_forloop {
         System.out.println("How many months pass? ");
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int months = Integer.parseInt(in.readLine());
+
         if (months == 0 || months == 1 || months == 2 ) System.out.print("A pairs of rabbits");
         else{
-            int arr[] = new int[months];
+            int arr[] = new int[months + 1];
 
-            arr[0] = 1; // small
-            arr[1] = 1; // medium
-            arr[2] = 1; // large
+            arr[0] = 1; // month 0
+            arr[1] = 1; // month 1
+            arr[2] = 1; // month 2
+            arr[3] = 2;
 
-            for (int i = 2; i < months; i++) {
-                arr[i] = arr[i - 1] + arr[i - 2];
-                if (i == (months - 1)) System.out.println(arr[i] + " pairs of rabbits");
+            for (int i = 4; i <= months; i++) {
+                arr[i] = arr[i - 1] + arr[i - 3];
+                if (i == months) System.out.println(arr[i] + " pairs of rabbits");
             }
         }
+        return;
     }
 
 }
